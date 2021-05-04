@@ -5,26 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/rifkiard/undaline-templates@main/assets/css/summer-sweat.min.css"> -->
-    <link rel="stylesheet" href="assets/css/summer-sweat.min.css">
+    <title>Wedding {male_name} & {female_name}</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/rifkiard/undaline-templates@main/assets/css/summer-sweat.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/vendor/leaflet-1.7.1/leaflet.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rifkiard/alertrict@main/dist/css/alertrict.min.css">
 </head>
 
 <body class="">
-    <!-- <div class="open-invitation">
+    <div class="open-invitation">
         <div class="open-invitation-inner">
             <div class="wrappper">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h1 class="mb-0">Rifki Ardiansyah & Hani Amanda Putri</h1>
-                        <p class="mb-3">Anak dari Rusdi & Mira dan Yayat & Aan</p>
+                        <h1 class="mb-0">{male_name} & {female_name}</h1>
+                        <p class="mb-3">Anak dari {father_male_name} & {mother_male_name} dan {father_female_name} &
+                            {mother_female_name}</p>
                         <p class="mb-0">kepada Ibu/Bapak/Suadara/i</p>
-                        <h2 class="text-center">Yoga Bagas</h2>
-                        <p class="mb-4">
+                        <h2 class="text-center m-0">{to}</h2>
+                        <p class="mb-4 mt-3">
                             Mohon maaf apabila terdapat kesalahan dalam penulisan nama atau gelar.
                         </p>
                         <button type="button" data-toggle="open-invitation" class="btn btn-primary mx-auto focus">
@@ -35,13 +34,13 @@
             </div>
         </div>
     </div>
-     -->
+
     <section id="section-hero">
         <div class="hero d-flex justify-content-center align-items-center">
             <div class="wrapper d-flex justify-content-center align-items-center">
                 <div class="hero-inner">
                     <h1 class="text-cookie font-weight-500 text-white fs-62 text-capitalize text-center">
-                        Rifki Ardiansyah & Hani Amanda Putri
+                        {male_name} & {female_name}
                     </h1>
                     <h2 class="text-center text-white text-uppercase fs-16 fs-md-26 mb-3 pl-md-4">
                         <span class="letter-spacing-1">Invite you to</span>
@@ -69,13 +68,14 @@
                 <div class="col-12">
                     <div class="quotes py-6">
                         <div class="quotes-heart-top">
-                            <img src="assets/img/heart.svg" class="h-35" alt="">
+                            <img src="https://cdn.jsdelivr.net/gh/rifkiard/undaline-templates@main/assets/img/heart.svg"
+                                class="h-35" alt="{male_name} dan {female_name}">
                         </div>
                         <div class="quotes-inner">
                             <div class="quotes-images">
                                 <div class="quotes-image">
                                     <div class="quotes-image-inner">
-                                        <img src="assets/img/allie-2.jpeg" alt="">
+                                        <img src="{photo_male}" alt="{male_name}">
                                     </div>
                                 </div>
                                 <div class="quotes-image-center">
@@ -83,7 +83,7 @@
                                         Hari
                                         Spesial</p>
                                     <p class="text-center text-monoton text-white fs-41 mb-2">
-                                        31 Agustus 2021
+                                        {wedding_time}
                                     </p>
                                     <div class="text-center mb-2">
                                         <div class="dropdown">
@@ -94,9 +94,10 @@
                                                 Simpan tanggal
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Google Calendar</a>
-                                                <a class="dropdown-item" href="#">Outlook Calendar</a>
-                                                <a class="dropdown-item" href="#">File ICS</a>
+                                                <a class="dropdown-item" href="{google_calendar}">Google Calendar</a>
+                                                <a class="dropdown-item" href="{webOutlook_calendar}">Outlook
+                                                    Calendar</a>
+                                                <a class="dropdown-item" href="{ics_file}">File ICS</a>
                                             </div>
                                         </div>
                                     </div>
@@ -104,33 +105,25 @@
                                         <i class="ri-double-quotes-l"></i>
                                     </p>
                                     <p class="text-center text-white fs-14 fs-md-16 font-weight-700">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo
-                                        perspiciatis in
-                                        excepturi, recusandae ad reiciendis amet accusamus veritatis distinctio
-                                        voluptatibus molestiae, repellat dolores. Facere, corrupti. Voluptates
-                                        incidunt
-                                        adipisci itaque! recusandae ad reiciendis amet accusamus veritatis
-                                        distinctio
-                                        voluptatibus molestiae, repellat dolores. Facere, corrupti. Voluptates
-                                        incidunt
-                                        adipisci itaque!
+                                        {quotes}
                                     </p>
                                     <p class="text-center text-white fs-31 font-weight-600 m-0">
                                         <i class="ri-double-quotes-r"></i>
                                     </p>
                                     <p class="text-center text-white fs-14 fs-md-16 font-weight-700">
-                                        ― Rifki & ardiansyah
+                                        ― {male_name} & {female_name}
                                     </p>
                                 </div>
                                 <div class="quotes-image">
                                     <div class="quotes-image-inner">
-                                        <img src="assets/img/allie.jpeg" alt="">
+                                        <img src="{photo_female}" alt="{female_name}">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="quotes-heart-bottom">
-                            <img src="assets/img/heart.svg" class="h-35" alt="">
+                            <img src="assehttps://cdn.jsdelivr.net/gh/rifkiard/undaline-templates@main/assets/img/heart.svg"
+                                class="h-35" alt="{male_name} dan {female_name}">
                         </div>
                     </div>
                 </div>
@@ -145,10 +138,10 @@
                     <div class="col-12 col-md-6 offset-md-3 offset-lg-0 col-lg-4">
                         <div class="event-cover mt-5 mx-auto mx-md-0">
                             <div class="event-cover-image">
-                                <img src="assets/img/couple.jpg" alt="">
-                                <img src="assets/img/couple.jpg" alt="">
-                                <img src="assets/img/couple.jpg" alt="">
-                                <img src="assets/img/couple.jpg" alt="">
+                                <img src="{first_banner}" alt="{male_name} dan {female_name}">
+                                <img src="{first_banner}" alt="{male_name} dan {female_name}">
+                                <img src="{first_banner}" alt="{male_name} dan {female_name}">
+                                <img src="{first_banner}" alt="{male_name} dan {female_name}">
                             </div>
                         </div>
                     </div>
@@ -158,26 +151,7 @@
                                 Sambutan
                             </p>
                             <p class="fs-14 fs-md-16 mb-0">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique error vitae eos
-                                veritatis, qui odio dolorem ullam asperiores natus fugit. Voluptatum, quasi voluptatem
-                                dignissimos repellat suscipit fugiat aspernatur pariatur dicta minima, non iusto
-                                assumenda atque nobis veniam sunt autem! Consequatur perspiciatis eum qui. Assumenda,
-                                accusantium. Exercitationem suscipit, atque magnam similique tempora quo hic animi
-                                consequuntur repudiandae illo corporis, tempore iusto possimus voluptatum aut, numquam
-                                labore facilis! Iure, illo quidem, nihil consequatur eaque eum qui deleniti sed amet
-                                asperiores laborum fugiat corrupti quam est exercitationem dolorum distinctio voluptas
-                                cupiditate! Rerum corrupti non nam, quam tempore, alias voluptates officiis eaque,
-                                voluptate numquam excepturi velit aliquid consectetur totam laborum aut neque corporis
-                                dolor eligendi nesciunt. Nam accusamus odio pariatur rerum nostrum aut magnam asperiores
-                                quod commodi aperiam ipsum ab porro, ea repellat laborum consequuntur vero quo totam
-                                inventore earum eos deleniti. Sequi eligendi soluta recusandae, eos ea neque iusto
-                                debitis laudantium? Doloremque, inventore perferendis eveniet ex, totam magnam corporis
-                                veniam fugiat architecto eligendi culpa reprehenderit esse rerum eaque ipsa! Hic
-                                officiis adipisci laboriosam culpa optio cum nemo aut, dolores consequuntur odit
-                                pariatur ullam id a minima recusandae quae? Facere, dolorem asperiores. Deserunt,
-                                aperiam rerum. Unde quaerat cupiditate tenetur minima culpa praesentium consequatur et
-                                velit quam inventore magni libero expedita dolores, impedit maiores odio labore eveniet
-                                asperiores error. Ipsam vero quas earum iusto
+                                {welcome_desc}
                             </p>
                         </div>
                     </div>
@@ -193,47 +167,11 @@
                     <div class="col-12">
                         <div class="gallery-masonry">
                             <div class="gallery-wrapper">
+                                {LOOP:galeries}
                                 <figure>
-                                    <img src="https://assets.codepen.io/12005/windmill.jpg" alt="A windmill" />
+                                    <img src="%%photo%%" alt="{male_name} dan {female_name}" />
                                 </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/suspension-bridge.jpg"
-                                        alt="The Clifton Suspension Bridge" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/sunset.jpg" alt="Sunset and boats" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/snowy.jpg" alt="a river in the snow" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/bristol-balloons1.jpg"
-                                        alt="a single checked balloon" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/dog-balloon.jpg"
-                                        alt="a hot air balloon shaped like a dog" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/abq-balloons.jpg"
-                                        alt="View from a hot air balloon of other balloons" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/disney-balloon.jpg"
-                                        alt="a balloon fairground ride" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/bristol-harbor.jpg"
-                                        alt="sunrise over a harbor" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/bristol-balloons2.jpg"
-                                        alt="three hot air balloons in a blue sky" />
-                                </figure>
-                                <figure>
-                                    <img src="https://assets.codepen.io/12005/toronto.jpg"
-                                        alt="the Toronto light up sign at night" />
-                                </figure>
+                                {ENDLOOP:galeries}
                             </div>
                         </div>
                     </div>
@@ -257,19 +195,18 @@
                             </p>
                             <ul class="list-group fs-14 fs-md-16 ">
                                 <li class="list-group-item">
-                                    Jam 15:24:00 sampai selesai
+                                    {time_start_wedding_reception} sampai selesai
                                 </li>
                             </ul>
                             <p class="fs-42 mb-1 text-cookie">
                                 Resepsi
                             </p>
                             <ul class="list-group fs-14 fs-md-16 ">
+                                {time_start_wedding_reception}
                                 <li class="list-group-item">
-                                    Sesi 1 Jam 15:24:00 sampai selesai
+                                    Sesi %%sesi%% Jam %%time%% sampai %%time_end%%
                                 </li>
-                                <li class="list-group-item">
-                                    Sesi 2 Jam 15:24:00 sampai selesai
-                                </li>
+                                {ENDLOOP:endsessions}
                             </ul>
                         </div>
                     </div>
@@ -290,14 +227,15 @@
                             <p class="fs-14 fs-md-16 mb-0 text-center">
                                 Dengan era modern saat ini, kami melayani pemberian kado secara digital.
                             </p>
+                            {LOOP:kadodigital}
                             <div class="d-flex w-full my-2 border p-3">
-                                <img src="assets/img/couple.jpg" alt="" class="w-100 mr-3">
+                                <img src="%%logo%%" alt="Bank logo" class="w-100 mr-3">
                                 <div>
                                     <p data-content="no-rek" class="fs-14 fs-md-16 font-weight-700 text-black mb-0">
-                                        47247328947274
+                                        %%bank_number%%
                                     </p>
                                     <p class="fs-14 fs-md-16 mb-0">
-                                        Aatas Nama Rifki Ardiansyah
+                                        Aatas Nama %%owner_bank_number%%
                                     </p>
                                     <p class="fs-14 fs-md-16 mb-0">
                                         <a href="javascript:void(0)" data-toggle="no-rek"
@@ -307,23 +245,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="d-flex w-full my-2 border p-3">
-                                <img src="assets/img/couple.jpg" alt="" class="w-100 mr-3">
-                                <div>
-                                    <p data-content="no-rek" class="fs-14 fs-md-16 font-weight-700 text-black mb-0">
-                                        47247328947274
-                                    </p>
-                                    <p class="fs-14 fs-md-16 mb-0">
-                                        Aatas Nama Rifki Ardiansyah
-                                    </p>
-                                    <p class="fs-14 fs-md-16 mb-0">
-                                        <a href="javascript:void(0)" data-toggle="no-rek"
-                                            class="badge badge-primary py-2 px-3">
-                                            Salin nomor rekening
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
+                            {ENDLOOP:kadodigital}
                         </div>
                     </div>
                 </div>
@@ -337,7 +259,8 @@
                 <div class="row h-full justify-content-center">
                     <div class="col-md-6 col-lg-6">
                         <div class="bg-white p-3">
-                            <form action="">
+                            <form action="{action_form_reservasi}" method="POST" id="form-reservasi">
+                                {require_inputs_form}
                                 <p class="fs-42 mb-0 text-cookie text-center">
                                     Reservasi
                                 </p>
@@ -367,25 +290,24 @@
                                 <div class="form-group">
                                     <label for="session_reception_id">Sesi kehadiran</label>
                                     <select name="session_reception_id" id="session_reception_id" class="custom-select">
-                                        <option value="1">Sesi : 1 (15:10- 16:10)</option>
-                                        <option value="2">Sesi : 2 (15:10- 16:10)</option>
+                                        {LOOP:sessions}
+                                        <option value="%%id%%">Sesi : %%sesi%% (%%time%% sampai %%time_end%%)</option>
+                                        {ENDLOOP:sessions}
                                     </select>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="session_reception_id">Jumlah kursi</label>
+                                    {LOOP:persons_array}
                                     <div class="custom-control custom-radio">
-                                        <input type="radio" id="person-1" name="total_person"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="person-1">1</label>
+                                        <input type="radio" id="person-%%total_person%%" name="total_person"
+                                            class="custom-control-input" value="%%total_person%%">
+                                        <label class="custom-control-label"
+                                            for="person-%%total_person%%">%%total_person%%</label>
                                     </div>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="person-2" name="total_person"
-                                            class="custom-control-input">
-                                        <label class="custom-control-label" for="person-2">2</label>
-                                    </div>
+                                    {ENDLOOP:persons_array}
                                 </div>
-                                <button class="btn btn-primary btn-block">
+                                <button type="submit" class="btn btn-primary btn-block">
                                     Kirim
                                 </button>
                             </form>
@@ -395,6 +317,9 @@
             </div>
         </div>
     </section>
+    <audio
+        src="https://undaline.megonesia.com/storage/playlists-invitation-married%2FApril2021%2FfR2QD8Vo4PCHfXrAcaU3.mp3"
+        id="audio_play"></audio>
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -404,10 +329,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    <script src="assets/vendor/leaflet-1.7.1/leaflet.js"></script>
-    <script src="assets/js/mg.RenderMap.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/rifkiard/alertrict@main/dist/js/alertrict.min.js"></script>
-    <script src="assets/js/summer-sweat.js"></script>
+    {_show_map}
+    <script src="https://cdn.jsdelivr.net/gh/rifkiard/undaline-templates@main/assets/js/summer-sweat.js"></script>
 </body>
 
 </html>

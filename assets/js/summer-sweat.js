@@ -37,26 +37,14 @@ $(function () {
         }
     });
 
-    var map = new RenderMap('map', [$("#map").data('lat'), $("#map").data("long")], 16);
-    map.setMarkers([{
-        icon: 'home',
-        coordinate: [$("#map").data('lat'), $("#map").data("long")],
-        popup: `
-        <p class="fs-14 mt-0 mb-2">
-            Lokasi pernikahan
-        </p>
-        <p class="fs-14 mb-0 mt-0 d-flex align-items-lg-center">
-            Buka di <a target="_blank" href="https://www.google.co.id/maps/@${$("#map").data('lat')},${$("#map").data('long')},15z" style="background:#0984e3;" class="badge text-light ml-2">Google Maps</a>
-        </p>
-    `
-    }]);
-
     $('[data-toggle="open-invitation"]').on("click", function () {
         $("body").removeClass('overflow-hidden');
         $(".open-invitation").addClass('opened');
         setTimeout(function () {
             $(".open-invitation").remove();
         }, 1500);
+        let audio = document.getElementById('audio_play');
+        audio.play();
     });
 
     $('[data-toggle="no-rek"]').on("click", function () {

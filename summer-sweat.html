@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rifkiard/alertrict@main/dist/css/alertrict.min.css">
 </head>
 
-<body class="">
+<body class="overflow-hidden">
     <div class="open-invitation">
         <div class="open-invitation-inner">
             <div class="wrappper">
@@ -202,11 +202,11 @@
                                 Resepsi
                             </p>
                             <ul class="list-group fs-14 fs-md-16 ">
-                                {LOOP:endsessions}
+                                {LOOP:sessions}
                                 <li class="list-group-item">
                                     Sesi %%sesi%% Jam %%time%% sampai %%time_end%%
                                 </li>
-                                {ENDLOOP:endsessions}
+                                {ENDLOOP:sessions}
                             </ul>
                         </div>
                     </div>
@@ -229,7 +229,7 @@
                             </p>
                             {LOOP:kadodigital}
                             <div class="d-flex w-full my-2 border p-3">
-                                <img src="%%logo%%" alt="Bank logo" class="w-100 mr-3">
+                                <img src="%%logo%%" alt="Logo bank" class="w-100 mr-3">
                                 <div>
                                     <p data-content="no-rek" class="fs-14 fs-md-16 font-weight-700 text-black mb-0">
                                         %%bank_number%%
@@ -317,9 +317,7 @@
             </div>
         </div>
     </section>
-    <audio
-        src="https://undaline.megonesia.com/storage/playlists-invitation-married%2FApril2021%2FfR2QD8Vo4PCHfXrAcaU3.mp3"
-        id="audio_play"></audio>
+    <audio src="{audio_link}" id="audio_play"></audio>
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -331,7 +329,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/rifkiard/alertrict@main/dist/js/alertrict.min.js"></script>
     {_show_map}
-    <script src="https://cdn.jsdelivr.net/gh/rifkiard/undaline-templates@main/assets/js/summer-sweat.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/rifkiard/undaline-templates@main/assets/js/summer-sweat.min.js"></script>
 </body>
 
 </html>

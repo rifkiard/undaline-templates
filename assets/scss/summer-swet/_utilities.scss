@@ -421,15 +421,15 @@ body {
 body {
   background-color: $body-bg;
   color: $body-color;
-  font-family: $font-esmessiri;
+  font-family: $font-esmessiri !important;
 }
 
 .text-cookie {
-  font-family: $font-cookie;
+  font-family: $font-cookie !important;
 }
 
 .text-monoton {
-  font-family: $font-monoton;
+  font-family: $font-monoton !important;
 }
 
 .dropdown-menu {

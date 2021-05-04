@@ -1,0 +1,77 @@
+.open-invitation {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    bottom: 0;
+    background-color: $white;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    bottom: 0;
+    background-color: $white;
+    z-index: -1;
+  }
+
+  &.opened {
+    animation: openInvitation 0.5s ease-in;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    &::before,
+    &::after {
+      animation: openInvitationAnimation 1s ease-in;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    .open-invitation-inner {
+      animation: openInvitationContent 0.5s ease-in;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes openInvitation {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
+}
+
+@keyframes openInvitationContent {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes openInvitationAnimation {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 0%;
+  }
+}

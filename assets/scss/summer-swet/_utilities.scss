@@ -273,6 +273,10 @@
   }
 }
 
+.bg-black {
+  background-color: #000;
+}
+
 .wrapper-static {
   margin: 0 auto;
   width: 95%;
@@ -426,4 +430,34 @@ body {
 
 .text-monoton {
   font-family: $font-monoton;
+}
+
+.dropdown-menu {
+  z-index: 1000 !important;
+}
+
+.text-neon {
+  color: $gray-500;
+
+  span:nth-of-type(odd) {
+    animation: 1s neon infinite linear;
+  }
+  span:nth-of-type(even) {
+    animation: 1s neon infinite linear;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes neon {
+  0% {
+    color: $gray-500;
+  }
+
+  50% {
+    color: $white;
+  }
+
+  100% {
+    color: $gray-500;
+  }
 }

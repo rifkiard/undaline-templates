@@ -1,0 +1,71 @@
+.section-event {
+  min-height: 100vh;
+  width: 100%;
+  background: url("../img/sunglass.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200%;
+    background-color: rgba($black, 0.4);
+  }
+
+  .event-inner {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.event-cover {
+  width: 90%;
+
+  .event-cover-image {
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+
+      &:not(:nth-of-type(1)) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: blur(1px);
+        z-index: 1;
+        transition: 0.5s;
+      }
+    }
+
+    &.event-cover-image-rotated img {
+      &:nth-of-type(2) {
+        transform: rotate(5deg);
+      }
+
+      &:nth-of-type(3) {
+        transform: rotate(10deg);
+      }
+
+      &:nth-of-type(4) {
+        transform: rotate(-15deg);
+      }
+    }
+  }
+}
+
+.greeting {
+  padding: $spacer * 1.5;
+  background-color: $white;
+}
